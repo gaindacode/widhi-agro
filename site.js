@@ -1,6 +1,6 @@
 // ---- Fill in your real contact details here. Empty values stay hidden on the site. ----
 const CONTACT = {
-  phone: "",      // e.g. "+977 98XXXXXXXX"
+  phone: "+977-9851036878",      // e.g. "+977 98XXXXXXXX"
   whatsapp: "",   // digits only with country code, e.g. "97798XXXXXXXX"
   email: "",      // e.g. "info@example.com"
   facebook: "",   // full page URL

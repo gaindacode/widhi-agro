@@ -1,8 +1,10 @@
 // ---- Fill in your real contact details here. Empty values stay hidden on the site. ----
 const CONTACT = {
-  phone: "+977-9851036878",      // e.g. "+977 98XXXXXXXX"
+  phone: "+977-9851036878",
+  phone2: "+977-9849965278", // optional second number
+  //     // e.g. "+977 98XXXXXXXX"
   whatsapp: "",   // digits only with country code, e.g. "97798XXXXXXXX"
-  email: "",      // e.g. "info@example.com"
+  email: "widhiagro@gmail.com",      // e.g. "info@example.com"
   facebook: "",   // full page URL
   mapUrl: "https://www.google.com/maps/search/?api=1&query=Padampur%2C+Chitwan%2C+Nepal"
 };
@@ -53,6 +55,11 @@ const any = [
   show("email", CONTACT.email, "mailto:" + CONTACT.email),
   show("facebook", CONTACT.facebook && CONTACT.facebook.replace(/^https?:\/\/(www\.)?/, ""), CONTACT.facebook)
 ].some(Boolean);
+if (CONTACT.phone2) {
+  const p2 = document.getElementById("phone2");
+  p2.textContent = CONTACT.phone2; p2.href = "tel:" + CONTACT.phone2.replace(/[^+\d]/g, "");
+  p2.hidden = false;
+}
 document.getElementById("row-soon").hidden = any;
 document.getElementById("maplink").href = CONTACT.mapUrl;
 document.getElementById("year").textContent = new Date().getFullYear();

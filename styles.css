@@ -139,3 +139,5 @@ footer ul { padding-left: 18px; margin: 8px 0 0; }
 /* farmers */
 .farmers .lead { margin-bottom: .6em; }
 .farmers .btn { margin-top: 8px; }
+#phone2 { display: block; }
+#phone2[hidden] { display: none; }

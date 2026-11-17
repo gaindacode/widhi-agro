@@ -6,7 +6,7 @@ const CONTACT = {
   whatsapp: "",   // digits only with country code, e.g. "97798XXXXXXXX"
   email: "widhiagro@gmail.com",      // e.g. "info@example.com"
   facebook: "",   // full page URL
-  mapUrl: "https://www.google.com/maps/search/?api=1&query=Padampur%2C+Chitwan%2C+Nepal"
+  mapUrl: "https://maps.app.goo.gl/guCiUyuUHNfGvfTP9"
 };
 // ---------------------------------------------------------------------------------------
 

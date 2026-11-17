@@ -135,3 +135,7 @@ footer ul { padding-left: 18px; margin: 8px 0 0; }
 .faq details { border-bottom: 1px solid var(--line); padding: 16px 0; max-width: 780px; }
 .faq summary { cursor: pointer; font: 500 1.2rem var(--display); color: var(--leaf-deep); }
 .faq details p { margin: 10px 0 0; color: var(--muted); }
+
+/* farmers */
+.farmers .lead { margin-bottom: .6em; }
+.farmers .btn { margin-top: 8px; }

@@ -40,7 +40,7 @@ p { margin: 0 0 1em; }
 
 /* hero */
 .hero { position: relative; min-height: min(86vh, 760px); display: grid; align-items: end; color: #fff; }
-.hero > img { position: absolute; inset: 0; }
+.hero > img { position: absolute; inset: 0; object-position: 50% 62%; }
 .hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,30,16,.15) 0%, rgba(12,30,16,.82) 100%); }
 .hero-inner { position: relative; z-index: 1; max-width: 1120px; width: 100%; margin: 0 auto; padding: 120px 20px 64px; }
 .tag { font-weight: 700; letter-spacing: .08em; text-transform: uppercase; font-size: .9rem; color: var(--corn); margin-bottom: .6em; }
@@ -81,9 +81,10 @@ dd { margin: 2px 0 0; font: 500 1.3rem var(--display); color: var(--leaf-deep); 
 .steps p { color: #c9d6c0; }
 
 /* gallery */
-.gallery { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 240px; gap: 12px; margin-top: 20px; }
-.gallery figure { position: relative; margin: 0; border-radius: 12px; overflow: hidden; }
-.gallery .wide { grid-column: span 2; }
+.gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 20px; }
+.gallery figure { position: relative; margin: 0; border-radius: 12px; overflow: hidden; aspect-ratio: 3/4; background: #000; }
+.gallery video { display: block; width: 100%; height: 100%; object-fit: cover; }
+.gallery .vid figcaption { top: 0; bottom: auto; padding: 10px 14px 28px; background: linear-gradient(rgba(0,0,0,.7), transparent); pointer-events: none; }
 figcaption { position: absolute; left: 0; right: 0; bottom: 0; padding: 28px 14px 10px; color: #fff; font-size: .95rem; font-weight: 500; background: linear-gradient(transparent, rgba(0,0,0,.7)); }
 
 /* contact */
@@ -110,7 +111,7 @@ footer ul { padding-left: 18px; margin: 8px 0 0; }
   .about, .contact { grid-template-columns: 1fr; gap: 28px; }
   .grid4, .steps { grid-template-columns: repeat(2, 1fr); }
   .cards { grid-template-columns: 1fr; }
-  .gallery { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 180px; }
+  .gallery { grid-template-columns: repeat(2, 1fr); }
   .wrap { padding: 52px 16px; }
 }
 @media (max-width: 520px) {
